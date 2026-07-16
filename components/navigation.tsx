@@ -6,7 +6,7 @@ export function Navigation() {
       <nav className={styles.nav} aria-label="Primary navigation">
         <a className={styles.wordmark} href="#top" aria-label="Ziyang Chen, home">
           <strong>ZC</strong>
-          <span>AI Experience</span>
+          <span>AI Innovation</span>
         </a>
         <div className={styles.links}>
           <a href="#work">Portfolio</a>

@@ -15,7 +15,7 @@ export function Footer() {
         </a>
         <div className={styles.bottom}>
           <span>Ziyang Chen</span>
-          <span>AI Experience Designer</span>
+          <span>AI Innovation</span>
           <span>2026</span>
         </div>
       </div>

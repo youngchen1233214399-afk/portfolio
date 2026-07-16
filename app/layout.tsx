@@ -7,9 +7,9 @@ import { MotionProvider } from "@/components/motion-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ziyang Chen | AI Experience Designer",
+  title: "Ziyang Chen | AI Innovation",
   description:
-    "A portfolio of AI experience design, UX/UI and working prototypes by Ziyang Chen.",
+    "A portfolio of AI innovation, UX/UI and working prototypes by Ziyang Chen.",
 };
 
 export default function RootLayout({

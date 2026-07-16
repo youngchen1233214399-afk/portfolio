@@ -32,8 +32,8 @@ export function About() {
             viewport={{ once: true, amount: 0.55 }}
           >
             <p>
-              I am an AI Experience Designer working across product thinking,
-              UX/UI, interaction design and AI-assisted coding.
+              I work in AI innovation across product thinking, UX/UI,
+              interaction design and AI-assisted coding.
             </p>
             <p>
               My background moves from 3D and game experiences to digital

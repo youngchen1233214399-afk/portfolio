@@ -63,8 +63,8 @@ export function KeyPrinciples() {
               experience.
             </p>
             <p className={styles.role}>
-              AI Experience Designer exploring how emerging technologies reshape
-              the way people create and interact.
+              Focused on AI innovation, exploring how emerging technologies
+              reshape the way people create and interact.
             </p>
           </motion.div>
         </div>
