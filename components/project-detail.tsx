@@ -80,6 +80,7 @@ export function ProjectDetail({ project, nextProject }: ProjectDetailProps) {
                 alt={slide.alt}
                 fill
                 priority={index === 0}
+                quality={90}
                 sizes="(max-width: 767px) 92vw, 46vw"
                 src={slide.image}
               />
