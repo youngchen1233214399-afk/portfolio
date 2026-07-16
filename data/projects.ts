@@ -56,9 +56,9 @@ export const projects: PortfolioProject[] = [
         title: "A tested prototype direction",
         description:
           "I completed the core interaction prototypes for resource browsing, AI explanations and company information. User testing validated the experience direction: the community-facing prototype achieved a 4.5/5 usability score, and 100% of participants found it useful. The project remains at the prototype validation stage.",
-        image: "/projects/eco-community.webp",
-        alt: "Eco-Bridge community app preview with verified local support",
-        surface: "#15271d",
+        image: "/projects/eco-outcome-decoder-display.webp",
+        alt: "Eco-Bridge ESG Report Decoder shown on a desktop display",
+        surface: "#e9ece7",
       },
     ],
   },
