@@ -21,7 +21,7 @@ export function About() {
             <h2 className="display-type">
               Hi there, I&apos;m <em>Ziyang.</em>
             </h2>
-            <p className={styles.nameTag}>Also Ziyang Chen.</p>
+            <p className={styles.nameTag}>Also Lucas.</p>
           </motion.div>
 
           <motion.div
