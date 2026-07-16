@@ -82,7 +82,6 @@ export function ProjectDetail({ project, nextProject }: ProjectDetailProps) {
                 priority={index === 0}
                 sizes="(max-width: 767px) 92vw, 46vw"
                 src={slide.image}
-                unoptimized
               />
             </motion.div>
           </section>

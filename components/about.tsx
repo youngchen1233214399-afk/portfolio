@@ -81,7 +81,7 @@ export function About() {
               fill
               quality={95}
               sizes="(max-width: 767px) 52vw, (max-width: 900px) 45vw, 430px"
-              src="/about/ziyang-death-stranding.png"
+              src="/about/ziyang-death-stranding.webp"
             />
           </motion.figure>
 

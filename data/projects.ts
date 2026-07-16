@@ -1,4 +1,4 @@
-export type ProjectSlide = {
+﻿export type ProjectSlide = {
   chapter: string;
   title: string;
   description: string;
@@ -27,7 +27,7 @@ export const projects: PortfolioProject[] = [
     type: "Community intelligence",
     year: "2026",
     liveUrl: "https://eco-bridgeai.netlify.app/",
-    previewImage: "/projects/eco-bridge-thumbnail.png",
+    previewImage: "/projects/eco-bridge-thumbnail.webp",
     previewAlt: "Eco-Bridge dashboard and ESG decoder shown across a laptop and layered screens",
     previewSurface: "#17251b",
     summary:
@@ -38,7 +38,7 @@ export const projects: PortfolioProject[] = [
         title: "Connecting ESG information with community needs",
         description:
           "Based on a client brief from Heaven Company, Eco-Bridge explores how AI-assisted information interpretation can lower the barrier to understanding ESG content and connect corporate information with community needs through an AI information experience prototype.",
-        image: "/projects/eco-bridge-thumbnail.png",
+        image: "/projects/eco-bridge-thumbnail.webp",
         alt: "Eco-Bridge dashboard and ESG decoder shown across a laptop and layered screens",
         surface: "#edf1ea",
       },
@@ -47,7 +47,7 @@ export const projects: PortfolioProject[] = [
         title: "UX research, interaction design and AI prototyping",
         description:
           "I was responsible for UX research, interaction design and AI prototyping for Eco-Bridge, contributing across the complete design process from user insights and experience-flow design to high-fidelity prototype validation.",
-        image: "/projects/eco-role-system-collage.png",
+        image: "/projects/eco-role-system-collage.webp",
         alt: "Eco-Bridge business and community interface system shown across a layered screen composition",
         surface: "#e8eee2",
       },
@@ -56,7 +56,7 @@ export const projects: PortfolioProject[] = [
         title: "A tested prototype direction",
         description:
           "I completed the core interaction prototypes for resource browsing, AI explanations and company information. User testing validated the experience direction: the community-facing prototype achieved a 4.5/5 usability score, and 100% of participants found it useful. The project remains at the prototype validation stage.",
-        image: "/projects/eco-community.png",
+        image: "/projects/eco-community.webp",
         alt: "Eco-Bridge community app preview with verified local support",
         surface: "#15271d",
       },
@@ -68,7 +68,7 @@ export const projects: PortfolioProject[] = [
     type: "Explainable AI review",
     year: "2025",
     liveUrl: "https://gcs-ai.netlify.app/",
-    previewImage: "/projects/claritybrief-thumbnail.png",
+    previewImage: "/projects/claritybrief-thumbnail.webp",
     previewAlt: "ClarityBrief review workspace shown across layered desktop screens",
     previewSurface: "#d7e7f2",
     summary:
@@ -79,7 +79,7 @@ export const projects: PortfolioProject[] = [
         title: "AI-assisted review for government communications",
         description:
           "GCS Assist is an AI-assisted content review tool designed for government communication scenarios. Through structured information presentation and human review mechanisms, it helps users improve the experience of reviewing high-risk content.",
-        image: "/projects/claritybrief-thumbnail.png",
+        image: "/projects/claritybrief-thumbnail.webp",
         alt: "ClarityBrief review workspace shown across layered desktop screens",
         surface: "#eef2f6",
       },
@@ -88,7 +88,7 @@ export const projects: PortfolioProject[] = [
         title: "AI experience design and interactive prototyping",
         description:
           "I was responsible for AI experience design and interactive prototype development, working from user research and information architecture through to Human-AI workflow design to explore how AI can support complex review scenarios.",
-        image: "/projects/clarity-role-system-collage.png",
+        image: "/projects/clarity-role-system-collage.webp",
         alt: "ClarityBrief AI review system shown across multiple layered interface screens",
         surface: "#e7eef5",
       },
@@ -97,7 +97,7 @@ export const projects: PortfolioProject[] = [
         title: "A complete high-fidelity review workflow",
         description:
           "I completed a high-fidelity interactive prototype covering document analysis, risk alerts and the end-to-end review flow. Early usability testing informed refinements to AI transparency and the level of control available to users.",
-        image: "/projects/clarity-outcome-router-display.png",
+        image: "/projects/clarity-outcome-router-display.webp",
         alt: "ClarityBrief AI Review Router shown on a desktop display with layered workflow screens",
         surface: "#dfe9f3",
       },
@@ -109,7 +109,7 @@ export const projects: PortfolioProject[] = [
     type: "Gamified sustainability",
     year: "2025",
     liveUrl: "https://bristopia.netlify.app/",
-    previewImage: "/projects/bristopia-thumbnail.png",
+    previewImage: "/projects/bristopia-thumbnail.webp",
     previewAlt: "Bristopia garden quest map",
     previewSurface: "#dcebe1",
     summary:
@@ -120,7 +120,7 @@ export const projects: PortfolioProject[] = [
         title: "A gamified Botanic Garden experience",
         description:
           "Bristopia is a gamified mobile experience designed for the University of Bristol Botanic Garden. Through map exploration, QR-code tasks, community activities and point-based rewards, it encourages students to learn about the garden's sustainability projects and build environmentally responsible everyday habits.",
-        image: "/projects/bristopia-thumbnail.png",
+        image: "/projects/bristopia-thumbnail.webp",
         alt: "Bristopia map showing an active Pollinator Trail through the Botanic Garden",
         surface: "#dcebe1",
       },
@@ -129,7 +129,7 @@ export const projects: PortfolioProject[] = [
         title: "Research, behavioural analysis and design collaboration",
         description:
           "I contributed to user research, behavioural analysis and design collaboration, translating student needs into feature and interaction directions. I also supported the mobile prototype and the production of its visual content.",
-        image: "/projects/bristopia-role-map-collage-v2.png",
+        image: "/projects/bristopia-role-map-collage-v2.webp",
         alt: "Bristopia mobile screens showing the garden map, quest selection and QR task flow",
         surface: "#e3eee7",
       },
@@ -138,7 +138,7 @@ export const projects: PortfolioProject[] = [
         title: "Clear priorities for the next iteration",
         description:
           "I completed a low-fidelity Figma prototype and a Codex-assisted high-fidelity prototype. User testing identified issues with QR-code guidance, map usability and navigation, establishing clear optimisation priorities for the next iteration.",
-        image: "/projects/bristopia-outcome-collage-v2.png",
+        image: "/projects/bristopia-outcome-collage-v2.webp",
         alt: "Bristopia community, profile and challenge screens shown across mobile mockups",
         surface: "#e0ede4",
       },

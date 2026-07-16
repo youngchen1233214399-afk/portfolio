@@ -56,7 +56,6 @@ export function ProjectShowcase() {
                 quality={95}
                 sizes="(max-width: 1200px) 42vw, 760px"
                 src={activeProject.previewImage}
-                unoptimized
               />
             </motion.div>
           ) : null}
