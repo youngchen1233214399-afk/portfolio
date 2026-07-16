@@ -54,7 +54,7 @@ export function ProjectShowcase() {
                 className={styles.previewImage}
                 fill
                 quality={95}
-                sizes="(max-width: 1200px) 42vw, 760px"
+                sizes="(max-width: 1200px) 75vw, 1400px"
                 src={activeProject.previewImage}
               />
             </motion.div>
