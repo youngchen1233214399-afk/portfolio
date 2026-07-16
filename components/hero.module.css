@@ -1,0 +1,244 @@
+.hero {
+  position: relative;
+  min-height: 100dvh;
+  padding-top: var(--nav-height);
+}
+
+.canvas {
+  position: relative;
+  min-height: calc(100dvh - var(--nav-height));
+}
+
+.title {
+  position: absolute;
+  inset: clamp(104px, 15vh, 162px) 0 auto;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.title h1 {
+  display: grid;
+  margin: 0;
+  color: var(--foreground);
+  font-size: clamp(7.5rem, 17.6vw, 18.5rem);
+  line-height: 0.67;
+}
+
+.title h1 span:first-child {
+  justify-self: start;
+}
+
+.title h1 span:last-child {
+  justify-self: end;
+  padding-right: 0.12em;
+}
+
+.mediaTrack {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: min(46vw, 680px);
+  aspect-ratio: 1;
+  translate: -50% -47%;
+  will-change: transform, opacity;
+}
+
+.media {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  isolation: isolate;
+  transform-style: preserve-3d;
+  cursor: crosshair;
+  touch-action: pan-y;
+  border: 0.55px solid color-mix(in srgb, var(--foreground) 17%, transparent);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent) 66%, var(--surface));
+  box-shadow:
+    0 40px 110px color-mix(in srgb, var(--accent) 22%, transparent),
+    0 12px 44px color-mix(in srgb, var(--foreground) 9%, transparent),
+    inset 0 0 0 0.5px color-mix(in srgb, var(--surface) 18%, transparent);
+}
+
+.optics {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  will-change: opacity;
+}
+
+.field,
+.lens,
+.highlight,
+.ripple,
+.orbit {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.field {
+  inset: -10%;
+  background:
+    radial-gradient(circle at 31% 24%, rgba(242, 243, 238, 0.58), transparent 20%),
+    radial-gradient(circle at 68% 72%, color-mix(in srgb, var(--accent) 91%, transparent), transparent 50%),
+    repeating-radial-gradient(
+      circle at 38% 44%,
+      color-mix(in srgb, var(--foreground) 13%, transparent) 0 0.65px,
+      transparent 0.65px 7px
+    ),
+    color-mix(in srgb, var(--accent) 72%, var(--surface));
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.lens {
+  inset: 11%;
+  border: 0.55px solid color-mix(in srgb, var(--surface) 42%, transparent);
+  background:
+    conic-gradient(
+      from 112deg,
+      transparent,
+      color-mix(in srgb, var(--surface) 18%, transparent),
+      transparent 39%,
+      color-mix(in srgb, var(--foreground) 8%, transparent),
+      transparent 76%
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      transparent 0 37%,
+      color-mix(in srgb, var(--surface) 28%, transparent) 37.35% 37.55%,
+      transparent 37.8%
+    );
+  box-shadow:
+    inset 0 0 48px color-mix(in srgb, var(--surface) 11%, transparent),
+    0 16px 42px color-mix(in srgb, var(--foreground) 5%, transparent);
+  mix-blend-mode: soft-light;
+  will-change: transform;
+}
+
+.orbit {
+  inset: 6.5%;
+  border: 0.5px solid color-mix(in srgb, var(--surface) 27%, transparent);
+  opacity: 0.72;
+  animation: orbit-turn 18s linear infinite;
+}
+
+.orbit span {
+  position: absolute;
+  width: 4px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--surface) 78%, transparent);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--surface) 48%, transparent);
+}
+
+.orbit span:first-child {
+  top: 12%;
+  right: 16%;
+}
+
+.orbit span:last-child {
+  bottom: 10%;
+  left: 19%;
+  width: 2.5px;
+  opacity: 0.5;
+}
+
+.highlight {
+  top: 14%;
+  left: 18%;
+  width: 32%;
+  aspect-ratio: 1;
+  background: radial-gradient(circle, rgba(245, 247, 242, 0.28), transparent 69%);
+  filter: blur(16px);
+  mix-blend-mode: soft-light;
+  will-change: transform;
+}
+
+.solid {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--accent);
+  pointer-events: none;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.ripple {
+  inset: 8%;
+  border: 0.55px solid color-mix(in srgb, var(--surface) 46%, transparent);
+  box-shadow:
+    0 0 0 0.5px color-mix(in srgb, var(--foreground) 5%, transparent),
+    0 0 42px color-mix(in srgb, var(--surface) 14%, transparent);
+  opacity: 0;
+}
+
+@keyframes orbit-turn {
+  to {
+    rotate: 360deg;
+  }
+}
+
+@media (max-width: 1023px) {
+  .title h1 {
+    font-size: clamp(7rem, 19vw, 12rem);
+  }
+
+  .mediaTrack {
+    width: min(58vw, 600px);
+  }
+}
+
+@media (max-width: 767px) {
+  .canvas {
+    min-height: calc(100dvh - var(--nav-height));
+  }
+
+  .title {
+    top: clamp(104px, 15vh, 142px);
+  }
+
+  .title h1 {
+    gap: 0.08em;
+    font-size: clamp(5.5rem, 27vw, 8.2rem);
+    line-height: 0.7;
+  }
+
+  .title h1 span:last-child {
+    padding-right: 0;
+  }
+
+  .mediaTrack {
+    top: 48%;
+    width: min(84vw, 470px);
+  }
+
+  .media {
+    cursor: default;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit {
+    animation: none;
+  }
+}
+
+@media (max-height: 720px) and (min-width: 768px) {
+  .title {
+    top: 90px;
+  }
+
+  .title h1 {
+    font-size: clamp(6.7rem, 15vw, 11rem);
+  }
+
+  .mediaTrack {
+    width: min(39vw, 500px);
+  }
+}

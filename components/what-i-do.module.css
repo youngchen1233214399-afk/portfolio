@@ -1,0 +1,240 @@
+.section {
+  position: relative;
+  min-height: 152dvh;
+  scroll-margin-top: 84px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  display: grid;
+  min-height: 100dvh;
+  place-items: end center;
+  overflow: hidden;
+  padding: 76px 24px 0;
+}
+
+.disc {
+  position: relative;
+  width: min(94vw, 1500px);
+  aspect-ratio: 1.3 / 1;
+  border: 1px solid color-mix(in srgb, var(--foreground) 32%, transparent);
+  border-radius: 50% 50% 0 0 / 50% 50% 0 0;
+  background: var(--surface);
+  transform-origin: 50% 58%;
+}
+
+.accessibleTitle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.ring {
+  position: absolute;
+  inset: 1.4%;
+  width: 97.2%;
+  height: 97.2%;
+  overflow: visible;
+  transform-origin: center;
+}
+
+.ring text {
+  fill: var(--accent);
+  font-family: var(--font-editorial);
+  font-size: 78px;
+  font-weight: 450;
+  letter-spacing: -0.035em;
+}
+
+.capabilities {
+  position: absolute;
+  inset: 19% 22% 6%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transform-origin: center;
+}
+
+.capability {
+  position: absolute;
+  display: grid;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--foreground) 74%, transparent);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--surface) 78%, transparent);
+  color: var(--foreground);
+  font-family: var(--font-editorial);
+  overflow: hidden;
+  padding: 7%;
+  font-size: clamp(1.35rem, 2vw, 2.55rem);
+  line-height: 0.96;
+  text-align: center;
+  transform-origin: center;
+}
+
+.capability > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 78%;
+  transform: translate(-50%, -50%);
+}
+
+.capabilityLine {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.capabilityCore {
+  top: 12%;
+  left: 38%;
+  width: 24%;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-size: clamp(1.1rem, 1.55vw, 1.9rem);
+}
+
+.capabilityUx {
+  top: 20%;
+  right: 12%;
+  width: 24%;
+}
+
+.capabilityInteraction {
+  top: 32%;
+  left: 18%;
+  width: 24%;
+}
+
+.capabilityInteraction,
+.capabilityProduct {
+  font-size: clamp(1.2rem, 1.75vw, 2.15rem);
+}
+
+.capabilityCode {
+  top: 47%;
+  right: 18%;
+  width: 24%;
+}
+
+.capabilityProduct {
+  top: 67%;
+  left: 38%;
+  width: 24%;
+}
+
+@media (max-width: 900px) {
+  .section {
+    min-height: 142dvh;
+  }
+
+  .disc {
+    width: max(980px, 132vw);
+  }
+
+  .ring text {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    min-height: auto;
+    padding-block: 72px 92px;
+  }
+
+  .sticky {
+    position: relative;
+    min-height: auto;
+    padding: 0 16px;
+    overflow: visible;
+  }
+
+  .disc {
+    width: 100%;
+    min-height: 650px;
+    aspect-ratio: auto;
+    border-radius: 50% 50% 0 0 / 16% 16% 0 0;
+    transform: none !important;
+  }
+
+  .ring {
+    top: -2%;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    width: 720px;
+    height: 720px;
+    transform: translateX(-50%) !important;
+  }
+
+  .ring text {
+    font-size: 68px;
+  }
+
+  .capabilities {
+    inset: 18% 7% 4%;
+    transform: none !important;
+  }
+
+  .capability {
+    font-size: clamp(1.2rem, 6vw, 1.65rem);
+  }
+
+  .capabilityCore {
+    top: 0;
+    left: 31%;
+    width: 38%;
+  }
+
+  .capabilityUx {
+    top: 22%;
+    right: 3%;
+    width: 32%;
+  }
+
+  .capabilityInteraction {
+    top: 24%;
+    left: 3%;
+    width: 33%;
+  }
+
+  .capabilityInteraction,
+  .capabilityProduct {
+    font-size: clamp(1rem, 5vw, 1.4rem);
+  }
+
+  .capabilityCore {
+    font-size: clamp(1rem, 4.4vw, 1.25rem);
+  }
+
+  .capabilityCode {
+    top: 48%;
+    right: 6%;
+    bottom: auto;
+    width: 32%;
+  }
+
+  .capabilityProduct {
+    top: 66%;
+    bottom: auto;
+    left: 33%;
+    width: 34%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .disc,
+  .ring,
+  .capabilities,
+  .capability {
+    transform: none !important;
+  }
+}
