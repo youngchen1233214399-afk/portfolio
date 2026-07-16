@@ -6,8 +6,8 @@ import styles from "./what-i-do.module.css";
 
 const capabilities = [
   {
-    label: "AI Experience Design",
-    lines: ["AI", "Experience", "Design"],
+    label: "AI Experience",
+    lines: ["AI", "Experience"],
     className: styles.capabilityCore,
   },
   { label: "UX/UI Design", lines: ["UX/UI", "Design"], className: styles.capabilityUx },
