@@ -104,6 +104,47 @@ export const projects: PortfolioProject[] = [
     ],
   },
   {
+    slug: "741",
+    name: "741",
+    type: "Athlete brand experience",
+    year: "2026",
+    liveUrl: "https://741qrcode.netlify.app/",
+    previewImage: "/projects/741-thumbnail.webp",
+    previewAlt: "741 brand experience shown across laptop, tablet and phone screens",
+    previewSurface: "#e8eae7",
+    summary:
+      "741 is a QR-gated brand experience for Jaylen Brown's athlete-owned label, turning a single scan into exclusive drops, collectible pods, community content and connected performance data.",
+    slides: [
+      {
+        chapter: "Project Overview",
+        title: "Turning a scan into a members-only world",
+        description:
+          "741 is a QR-gated brand experience concept for Jaylen Brown's athlete-owned label. A single scan opens a members-only space spanning limited-edition collectible pods, authenticated memorabilia, mystery drops with published odds, exclusive athlete video content, community forums and a connected performance profile. The project explores how a physical product can become the entry point to an ongoing digital relationship rather than a one-off purchase.",
+        image: "/projects/741-thumbnail.webp",
+        alt: "741 brand experience shown across laptop, tablet and phone screens",
+        surface: "#e8eae7",
+      },
+      {
+        chapter: "Role",
+        title: "End-to-end design and working prototype",
+        description:
+          "I led the design end to end and built the working prototype, from concept and information architecture through visual design, interaction and front-end implementation. I shaped the cinematic QR-access entry, the collectible pod system and the athlete performance dashboard into one connected experience.",
+        image: "/projects/741-role-collage.webp",
+        alt: "741 hero, shop and community forum shown across an isometric device layout",
+        surface: "#e6e8e5",
+      },
+      {
+        chapter: "Outcome",
+        title: "A complete, connected prototype",
+        description:
+          "I delivered a live end-to-end prototype spanning five connected areas — QR entry, shop, community, leaderboard and athlete profile. It includes rarity mechanics and artist-collaboration framing for collectible pods, transparent drop odds for mystery boxes, a four-tier rewards system, and an Apple Watch-linked performance dashboard with match-by-match charts.",
+        image: "/projects/741-outcome-flatlay.webp",
+        alt: "741 community, leaderboard, shop and performance screens shown in a flat-lay composition",
+        surface: "#e6e8e5",
+      },
+    ],
+  },
+  {
     slug: "bristopia",
     name: "Bristopia",
     type: "Gamified sustainability",
