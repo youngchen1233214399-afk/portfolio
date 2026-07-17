@@ -41,42 +41,87 @@ export function ProjectShowcase() {
   );
 
   const activeProject = projects.find((project) => project.slug === activeSlug);
-  const activeIndex = projects.findIndex((project) => project.slug === activeSlug);
-  const previewSide = activeIndex % 2 === 0 ? "left" : "right";
 
-  // Keep the last previewed project mounted so it can collapse back to the
-  // circle's centre on mouse-leave instead of vanishing instantly.
-  const lastShown = useRef<{ project: PortfolioProject; side: "left" | "right" } | null>(
-    null,
+  // The circle animates as a sequence: switching to a different title first
+  // collapses the circle to its centre, then swaps the image and expands
+  // again. `displayed` is the project currently inside the circle and `open`
+  // drives the clip-path; rapid hops always settle on the latest hover.
+  const [displayed, setDisplayed] = useState<PortfolioProject | null>(null);
+  const [open, setOpen] = useState(false);
+  const switchTimer = useRef<number | null>(null);
+  const activeRef = useRef<string | null>(null);
+  activeRef.current = activeSlug;
+  const displayedRef = useRef<PortfolioProject | null>(null);
+  displayedRef.current = displayed;
+  const openRef = useRef(false);
+  openRef.current = open;
+
+  useEffect(() => {
+    if (switchTimer.current !== null) {
+      window.clearTimeout(switchTimer.current);
+      switchTimer.current = null;
+    }
+    const active = activeSlug
+      ? projects.find((project) => project.slug === activeSlug) ?? null
+      : null;
+    if (!active) {
+      setOpen(false);
+      return;
+    }
+    const current = displayedRef.current;
+    if (!current || !openRef.current || current.slug === active.slug) {
+      if (!current || current.slug !== active.slug) setDisplayed(active);
+      setOpen(true);
+      return;
+    }
+    // Different title while the circle is open: collapse first, then swap.
+    setOpen(false);
+    switchTimer.current = window.setTimeout(() => {
+      switchTimer.current = null;
+      const latestSlug = activeRef.current;
+      const latest = latestSlug
+        ? projects.find((project) => project.slug === latestSlug) ?? null
+        : null;
+      if (!latest) return;
+      setDisplayed(latest);
+      setOpen(true);
+    }, 580);
+  }, [activeSlug]);
+
+  useEffect(
+    () => () => {
+      if (switchTimer.current !== null) window.clearTimeout(switchTimer.current);
+    },
+    [],
   );
-  if (activeProject) {
-    lastShown.current = { project: activeProject, side: previewSide };
-  }
-  const shown = activeProject ?? lastShown.current?.project ?? null;
-  const shownSide = activeProject ? previewSide : lastShown.current?.side ?? "left";
+
+  const displayedIndex = displayed
+    ? projects.findIndex((project) => project.slug === displayed.slug)
+    : 0;
+  const shownSide = displayedIndex % 2 === 0 ? "left" : "right";
 
   return (
     <section
       className={styles.section}
-      data-preview-side={activeProject ? previewSide : undefined}
+      data-preview-side={activeProject ? shownSide : undefined}
       id="work"
     >
       <div className={styles.previewLayer} aria-hidden="true">
-        {shown ? (
+        {displayed ? (
           <div
             className={`${styles.previewMask} ${
               shownSide === "right" ? styles.previewRight : ""
-            } ${activeProject ? styles.revealed : ""}`}
-            style={{ "--preview-surface": shown.previewSurface } as CSSProperties}
+            } ${open ? styles.revealed : ""}`}
+            style={{ "--preview-surface": displayed.previewSurface } as CSSProperties}
           >
             <Image
               alt=""
               className={styles.previewImage}
               fill
-              key={shown.slug}
+              key={displayed.slug}
               quality={95}
               sizes="(max-width: 1200px) 75vw, 1400px"
-              src={shown.previewImage}
+              src={displayed.previewImage}
             />
           </div>
         ) : null}
