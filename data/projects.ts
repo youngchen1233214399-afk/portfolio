@@ -105,9 +105,9 @@ export const projects: PortfolioProject[] = [
   },
   {
     slug: "741",
-    name: "741",
+    name: "741 performance",
     type: "Athlete brand experience",
-    year: "2026",
+    year: "2025",
     liveUrl: "https://741qrcode.netlify.app/",
     previewImage: "/projects/741-thumbnail.webp",
     previewAlt: "741 brand experience shown across laptop, tablet and phone screens",
