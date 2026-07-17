@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion, useReducedMotion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import type { PortfolioProject } from "@/data/projects";
+import { ProjectName } from "./project-name";
 import styles from "./project-detail.module.css";
 
 type ProjectDetailProps = {
@@ -109,7 +110,13 @@ export function ProjectDetail({ project, nextProject }: ProjectDetailProps) {
         >
           {activeIndex === 0 ? (
             <>
-              <h1 className="display-type">{project.name}</h1>
+              <h1 className="display-type">
+                <ProjectName
+                  name={project.name}
+                  displayCode={project.displayCode}
+                  codeClassName={styles.projectCode}
+                />
+              </h1>
               <p className={styles.type}>{project.type}</p>
             </>
           ) : (

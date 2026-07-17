@@ -149,6 +149,13 @@
   line-height: 0.76;
 }
 
+.projectCode {
+  font-family: Georgia, "Times New Roman", serif;
+  font-feature-settings: "lnum" 1;
+  font-variant-numeric: lining-nums;
+  letter-spacing: -0.075em;
+}
+
 .projectMeta {
   display: flex;
   min-width: min(100%, 430px);

@@ -10,6 +10,7 @@
 export type PortfolioProject = {
   slug: string;
   name: string;
+  displayCode?: string;
   type: string;
   year: string;
   liveUrl: string;
@@ -105,7 +106,8 @@ export const projects: PortfolioProject[] = [
   },
   {
     slug: "741",
-    name: "741 performance",
+    name: "741 Performance",
+    displayCode: "741",
     type: "Athlete brand experience",
     year: "2025",
     liveUrl: "https://741qrcode.netlify.app/",
@@ -137,7 +139,7 @@ export const projects: PortfolioProject[] = [
         chapter: "Outcome",
         title: "A complete, connected prototype",
         description:
-          "I delivered a live end-to-end prototype spanning five connected areas — QR entry, shop, community, leaderboard and athlete profile. It includes rarity mechanics and artist-collaboration framing for collectible pods, transparent drop odds for mystery boxes, a four-tier rewards system, and an Apple Watch-linked performance dashboard with match-by-match charts.",
+          "I delivered a live end-to-end prototype spanning five connected areas: QR entry, shop, community, leaderboard and athlete profile. It includes rarity mechanics and artist-collaboration framing for collectible pods, transparent drop odds for mystery boxes, a four-tier rewards system, and an Apple Watch-linked performance dashboard with match-by-match charts.",
         image: "/projects/741-outcome-flatlay.webp",
         alt: "741 community, leaderboard, shop and performance screens shown in a flat-lay composition",
         surface: "#e6e8e5",

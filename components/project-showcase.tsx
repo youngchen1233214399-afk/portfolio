@@ -6,6 +6,7 @@ import Link from "next/link";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useState, type CSSProperties } from "react";
 import { projects } from "@/data/projects";
+import { ProjectName } from "./project-name";
 import styles from "./project-showcase.module.css";
 
 export function ProjectShowcase() {
@@ -93,7 +94,13 @@ export function ProjectShowcase() {
                 onMouseLeave={() => setActiveSlug(null)}
               >
                 <span className={styles.nameRow}>
-                  <span className={`display-type ${styles.projectName}`}>{project.name}</span>
+                  <span className={`display-type ${styles.projectName}`}>
+                    <ProjectName
+                      name={project.name}
+                      displayCode={project.displayCode}
+                      codeClassName={styles.projectCode}
+                    />
+                  </span>
                   <ArrowRight aria-hidden="true" size={34} weight="regular" />
                 </span>
                 <span className={styles.projectMeta}>
