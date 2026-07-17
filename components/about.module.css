@@ -109,7 +109,7 @@
 .accentDisc {
   position: absolute;
   bottom: -12%;
-  left: 41%;
+  left: 38%;
   width: min(43vw, 650px);
   aspect-ratio: 1;
   border-radius: 50%;
@@ -204,7 +204,7 @@
   }
 
   .accentDisc {
-    left: 34%;
+    left: 31%;
     width: min(64vw, 590px);
   }
 }
