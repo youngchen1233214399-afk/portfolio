@@ -115,31 +115,31 @@ export const projects: PortfolioProject[] = [
     previewAlt: "741 brand experience shown across laptop, tablet and phone screens",
     previewSurface: "#e8eae7",
     summary:
-      "741 is a QR-gated brand experience for Jaylen Brown's athlete-owned label, turning a single scan into exclusive drops, collectible pods, community content and connected performance data.",
+      "741 Performance is a post-purchase membership platform for 741 footwear customers, using shoebox QR activation to connect points, challenges, leaderboards, community content, limited drops and member benefits.",
     slides: [
       {
         chapter: "Project Overview",
-        title: "Turning a scan into a members-only world",
+        title: "Turning the shoebox into a membership entry point",
         description:
-          "741 is a QR-gated brand experience concept for Jaylen Brown's athlete-owned label. A single scan opens a members-only space spanning limited-edition collectible pods, authenticated memorabilia, mystery drops with published odds, exclusive athlete video content, community forums and a connected performance profile. The project explores how a physical product can become the entry point to an ongoing digital relationship rather than a one-off purchase.",
+          "741 Performance is a post-purchase membership platform for 741 footwear customers. A QR code inside the shoebox activates the experience and connects points-based challenges, leaderboards, user-generated content, limited drops and exclusive member benefits in one journey.",
         image: "/projects/741-thumbnail.webp",
         alt: "741 brand experience shown across laptop, tablet and phone screens",
         surface: "#e8eae7",
       },
       {
         chapter: "Role",
-        title: "End-to-end design and working prototype",
+        title: "Designing the journey and growth loop",
         description:
-          "I led the design end to end and built the working prototype, from concept and information architecture through visual design, interaction and front-end implementation. I shaped the cinematic QR-access entry, the collectible pod system and the athlete performance dashboard into one connected experience.",
+          "I led competitor analysis, mapped the user journey and designed the engagement loop. I planned the digital membership system, built the interactive prototype and organised user testing to evaluate the concept and refine the experience.",
         image: "/projects/741-role-collage.webp",
         alt: "741 hero, shop and community forum shown across an isometric device layout",
         surface: "#e6e8e5",
       },
       {
         chapter: "Outcome",
-        title: "A complete, connected prototype",
+        title: "Validating what drives participation",
         description:
-          "I delivered a live end-to-end prototype spanning five connected areas: QR entry, shop, community, leaderboard and athlete profile. It includes rarity mechanics and artist-collaboration framing for collectible pods, transparent drop odds for mystery boxes, a four-tier rewards system, and an Apple Watch-linked performance dashboard with match-by-match charts.",
+          "I delivered a high-fidelity interactive prototype and tested it with users. Early findings suggested that points and leaderboards could motivate participation, while also revealing issues with entry-point visibility and understanding of key features.",
         image: "/projects/741-outcome-flatlay.webp",
         alt: "741 community, leaderboard, shop and performance screens shown in a flat-lay composition",
         surface: "#e6e8e5",
