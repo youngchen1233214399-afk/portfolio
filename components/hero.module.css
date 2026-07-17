@@ -44,6 +44,16 @@
   will-change: transform, opacity;
 }
 
+.discShadow {
+  position: absolute;
+  inset: 5%;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--foreground) 34%, var(--accent) 18%);
+  filter: blur(44px);
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
 .media {
   position: relative;
   width: 100%;
@@ -57,8 +67,7 @@
   border-radius: 50%;
   background: color-mix(in srgb, var(--accent) 66%, var(--surface));
   box-shadow:
-    0 40px 110px color-mix(in srgb, var(--accent) 22%, transparent),
-    0 12px 44px color-mix(in srgb, var(--foreground) 9%, transparent),
+    0 10px 34px color-mix(in srgb, var(--foreground) 7%, transparent),
     inset 0 0 0 0.5px color-mix(in srgb, var(--surface) 18%, transparent);
 }
 
@@ -96,22 +105,14 @@
 
 .lens {
   inset: 11%;
+  overflow: hidden;
   border: 0.55px solid color-mix(in srgb, var(--surface) 42%, transparent);
-  background:
-    conic-gradient(
-      from 112deg,
-      transparent,
-      color-mix(in srgb, var(--surface) 18%, transparent),
-      transparent 39%,
-      color-mix(in srgb, var(--foreground) 8%, transparent),
-      transparent 76%
-    ),
-    radial-gradient(
-      circle at 50% 50%,
-      transparent 0 37%,
-      color-mix(in srgb, var(--surface) 28%, transparent) 37.35% 37.55%,
-      transparent 37.8%
-    );
+  background: radial-gradient(
+    circle at 50% 50%,
+    transparent 0 37%,
+    color-mix(in srgb, var(--surface) 28%, transparent) 37.35% 37.55%,
+    transparent 37.8%
+  );
   box-shadow:
     inset 0 0 48px color-mix(in srgb, var(--surface) 11%, transparent),
     0 16px 42px color-mix(in srgb, var(--foreground) 5%, transparent);
@@ -119,11 +120,34 @@
   will-change: transform;
 }
 
+/* Polished-stone sheen: one slow revolution so the light band keeps moving. */
+.sheen {
+  position: absolute;
+  inset: -1%;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 112deg,
+    transparent,
+    color-mix(in srgb, var(--surface) 18%, transparent),
+    transparent 39%,
+    color-mix(in srgb, var(--foreground) 8%, transparent),
+    transparent 76%
+  );
+  animation: sheen-turn 44s linear infinite;
+  will-change: transform;
+}
+
+@keyframes sheen-turn {
+  to {
+    rotate: 360deg;
+  }
+}
+
 .orbit {
   inset: 6.5%;
   border: 0.5px solid color-mix(in srgb, var(--surface) 27%, transparent);
   opacity: 0.72;
-  animation: orbit-turn 18s linear infinite;
+  animation: orbit-turn 34s linear infinite;
 }
 
 .orbit span {
@@ -132,7 +156,6 @@
   aspect-ratio: 1;
   border-radius: 50%;
   background: color-mix(in srgb, var(--surface) 78%, transparent);
-  box-shadow: 0 0 12px color-mix(in srgb, var(--surface) 48%, transparent);
 }
 
 .orbit span:first-child {
@@ -224,7 +247,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .orbit {
+  .orbit,
+  .sheen {
     animation: none;
   }
 }

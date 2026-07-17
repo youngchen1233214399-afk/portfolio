@@ -7,6 +7,7 @@ import {
   useReducedMotion,
   useScroll,
   useSpring,
+  useTime,
   useTransform,
 } from "motion/react";
 import { PointerEvent, useEffect, useRef, useState } from "react";
@@ -123,16 +124,57 @@ export function Hero() {
   const titleLeftX = useTransform(scrollYProgress, [0, 0.3, 1], [0, 0, reduce ? 0 : -150]);
   const titleRightX = useTransform(scrollYProgress, [0, 0.3, 1], [0, 0, reduce ? 0 : 150]);
 
-  const fieldX = useTransform(springX, [-1, 1], [-30, 30]);
-  const fieldY = useTransform(springY, [-1, 1], [-30, 30]);
-  const lensX = useTransform(springX, [-1, 1], [18, -18]);
-  const lensY = useTransform(springY, [-1, 1], [18, -18]);
-  const highlightX = useTransform(springX, [-1, 1], [-70, 70]);
-  const highlightY = useTransform(springY, [-1, 1], [-70, 70]);
-  const tiltX = useTransform(springY, [-1, 1], [7, -7]);
-  const tiltY = useTransform(springX, [-1, 1], [-7, 7]);
+  // Idle drift: with no pointer nearby the light keeps travelling slowly
+  // across the mineral surface, so the disc reads as alive rather than a
+  // static texture. Amplitudes go to zero under reduced motion.
+  const time = useTime();
+  const amp = reduce ? 0 : 1;
+  const fieldX = useTransform(
+    [springX, time],
+    ([s, t]: number[]) => s * 30 + Math.sin(t / 4200) * 7 * amp,
+  );
+  const fieldY = useTransform(
+    [springY, time],
+    ([s, t]: number[]) => s * 30 + Math.cos(t / 5300) * 6 * amp,
+  );
+  const lensX = useTransform(
+    [springX, time],
+    ([s, t]: number[]) => s * -18 - Math.sin(t / 4700 + 2) * 5 * amp,
+  );
+  const lensY = useTransform(
+    [springY, time],
+    ([s, t]: number[]) => s * -18 - Math.cos(t / 5600 + 2) * 4 * amp,
+  );
+  const highlightX = useTransform(
+    [springX, time],
+    ([s, t]: number[]) => s * 70 + Math.sin(t / 6400) * 15 * amp,
+  );
+  const highlightY = useTransform(
+    [springY, time],
+    ([s, t]: number[]) => s * 70 + Math.cos(t / 7300) * 12 * amp,
+  );
+  const tiltX = useTransform(
+    [springY, time],
+    ([s, t]: number[]) => s * -7 + Math.sin(t / 8200) * 1.1 * amp,
+  );
+  const tiltY = useTransform(
+    [springX, time],
+    ([s, t]: number[]) => s * 7 + Math.cos(t / 9100) * 1.1 * amp,
+  );
   const activeScale = useTransform(springPresence, [0, 1], [1, 1.025]);
   const detailOpacity = useTransform(springPresence, [0, 1], [0.42, 0.92]);
+
+  // The soft shadow slides opposite the pointer (fixed light source) and
+  // deepens slightly as the pointer approaches, selling real depth.
+  const shadowX = useTransform(
+    [springX, time],
+    ([s, t]: number[]) => s * -16 + Math.sin(t / 5900) * 4 * amp,
+  );
+  const shadowY = useTransform(
+    [springY, time],
+    ([s, t]: number[]) => 14 + s * -10 + Math.cos(t / 6800) * 3 * amp,
+  );
+  const shadowOpacity = useTransform(springPresence, [0, 1], [0.5, 0.72]);
 
   const handlePointerMove = (event: PointerEvent<HTMLElement>) => {
     if (reduce || !mediaRef.current) return;
@@ -185,6 +227,10 @@ export function Hero() {
           transition={{ duration: 1.15, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
         >
           <motion.div
+            className={styles.discShadow}
+            style={{ x: shadowX, y: shadowY, opacity: shadowOpacity }}
+          />
+          <motion.div
             ref={mediaRef}
             className={styles.media}
             style={{ scale: activeScale }}
@@ -198,7 +244,9 @@ export function Hero() {
               <motion.div
                 className={styles.lens}
                 style={{ x: lensX, y: lensY, opacity: detailOpacity }}
-              />
+              >
+                <div className={styles.sheen} />
+              </motion.div>
               <div className={styles.orbit}>
                 <span />
                 <span />
