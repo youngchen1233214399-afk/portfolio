@@ -103,14 +103,18 @@ export function ProjectDetail({ project, nextProject }: ProjectDetailProps) {
 
         <motion.div
           animate={{ opacity: 1, y: 0 }}
-          className={styles.copy}
+          className={`${styles.copy} ${
+            activeIndex === 0 && project.displayCode ? styles.compactCopy : ""
+          }`}
           initial={reduce ? false : { opacity: 0, y: 18 }}
           key={`${project.slug}-${activeIndex}`}
           transition={{ duration: 0.42, ease: [0.16, 1, 0.3, 1] }}
         >
           {activeIndex === 0 ? (
             <>
-              <h1 className="display-type">
+              <h1
+                className={`display-type ${project.displayCode ? styles.compactProjectTitle : ""}`}
+              >
                 <ProjectName
                   name={project.name}
                   displayCode={project.displayCode}

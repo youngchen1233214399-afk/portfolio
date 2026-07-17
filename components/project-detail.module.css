@@ -123,6 +123,13 @@
   line-height: 0.78;
 }
 
+.copy h1.compactProjectTitle {
+  max-width: none;
+  font-size: clamp(4rem, 6.4vw, 7.6rem);
+  line-height: 0.82;
+  white-space: nowrap;
+}
+
 .projectCode {
   font-family: Georgia, "Times New Roman", serif;
   font-feature-settings: "lnum" 1;
@@ -266,6 +273,20 @@
   color: var(--accent-contrast);
 }
 
+@media (min-width: 768px) {
+  .compactCopy {
+    margin-top: clamp(54px, 9.5vh, 116px);
+  }
+
+  .compactCopy .slideTitle {
+    margin-top: clamp(18px, 2.5vh, 28px);
+  }
+
+  .compactCopy .description {
+    margin-top: clamp(24px, 3.5vh, 38px);
+  }
+}
+
 @media (max-width: 980px) {
   .detail {
     grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
@@ -277,6 +298,10 @@
 
   .copy h1 {
     font-size: clamp(4.6rem, 9vw, 6.7rem);
+  }
+
+  .copy h1.compactProjectTitle {
+    font-size: clamp(3.6rem, 6vw, 4.4rem);
   }
 
   .slideTitle {
@@ -292,15 +317,15 @@
   .detail {
     min-height: 100dvh;
     grid-template-columns: 1fr;
-    grid-template-rows: 54dvh 46dvh;
+    grid-template-rows: 48dvh 52dvh;
   }
 
   .gallery {
-    height: 54dvh;
+    height: 48dvh;
   }
 
   .slide {
-    min-height: 54dvh;
+    min-height: 48dvh;
     padding: 18px;
   }
 
@@ -310,7 +335,7 @@
   }
 
   .panel {
-    height: 46dvh;
+    height: 52dvh;
     min-height: 0;
     padding: 18px 18px 16px;
     border-top: 1px solid var(--line);
@@ -339,6 +364,11 @@
     max-width: none;
     font-size: clamp(3.1rem, 14vw, 4.6rem);
     line-height: 0.84;
+  }
+
+  .copy h1.compactProjectTitle {
+    font-size: clamp(2.8rem, 12vw, 4rem);
+    white-space: normal;
   }
 
   .chapter {
