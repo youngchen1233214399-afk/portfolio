@@ -49,7 +49,7 @@
 
 .revealed {
   clip-path: circle(50% at 50% 50%);
-  transition: clip-path 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.28s;
+  transition: clip-path 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.45s;
 }
 
 @media (prefers-reduced-motion: reduce) {
