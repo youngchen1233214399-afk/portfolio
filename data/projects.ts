@@ -111,9 +111,9 @@ export const projects: PortfolioProject[] = [
     type: "Athlete brand experience",
     year: "2025",
     liveUrl: "https://741qrcode.netlify.app/",
-    previewImage: "/projects/741-thumbnail.webp",
-    previewAlt: "741 brand experience shown across laptop, tablet and phone screens",
-    previewSurface: "#e8eae7",
+    previewImage: "/projects/741-outcome-flatlay.webp",
+    previewAlt: "741 community, leaderboard, shop and performance screens shown in a flat-lay composition",
+    previewSurface: "#e6e8e5",
     summary:
       "741 Performance is a post-purchase membership platform for 741 footwear customers, using shoebox QR activation to connect points, challenges, leaderboards, community content, limited drops and member benefits.",
     slides: [
@@ -122,9 +122,9 @@ export const projects: PortfolioProject[] = [
         title: "Turning the shoebox into a membership entry point",
         description:
           "741 Performance is a post-purchase membership platform for 741 footwear customers. A QR code inside the shoebox activates the experience and connects points-based challenges, leaderboards, user-generated content, limited drops and exclusive member benefits in one journey.",
-        image: "/projects/741-thumbnail.webp",
-        alt: "741 brand experience shown across laptop, tablet and phone screens",
-        surface: "#e8eae7",
+        image: "/projects/741-outcome-flatlay.webp",
+        alt: "741 community, leaderboard, shop and performance screens shown in a flat-lay composition",
+        surface: "#e6e8e5",
       },
       {
         chapter: "Role",
@@ -140,9 +140,9 @@ export const projects: PortfolioProject[] = [
         title: "Validating what drives participation",
         description:
           "I delivered a high-fidelity interactive prototype and tested it with users. Early findings suggested that points and leaderboards could motivate participation, while also revealing issues with entry-point visibility and understanding of key features.",
-        image: "/projects/741-outcome-flatlay.webp",
-        alt: "741 community, leaderboard, shop and performance screens shown in a flat-lay composition",
-        surface: "#e6e8e5",
+        image: "/projects/741-thumbnail.webp",
+        alt: "741 brand experience shown across laptop, tablet and phone screens",
+        surface: "#e8eae7",
       },
     ],
   },
