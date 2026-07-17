@@ -151,6 +151,9 @@ export function ProjectShowcase() {
         <ul className={styles.index} aria-label="Selected projects">
           {projects.map((project, index) => (
             <motion.li
+              className={`${styles.projectItem} ${
+                activeSlug === project.slug ? styles.activeItem : ""
+              }`}
               key={project.name}
               initial={reduce ? false : { opacity: 0, y: 34 }}
               whileInView={{ opacity: 1, y: 0 }}

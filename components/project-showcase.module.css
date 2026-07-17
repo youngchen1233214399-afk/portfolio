@@ -20,13 +20,12 @@
 
 .inner {
   position: relative;
-  z-index: 2;
 }
 
 .previewLayer {
   position: fixed;
   inset: 0;
-  z-index: 1;
+  z-index: 2;
   pointer-events: none;
 }
 
@@ -82,6 +81,8 @@
 }
 
 .intro {
+  position: relative;
+  z-index: 3;
   display: grid;
   justify-items: center;
   gap: 14px;
@@ -108,6 +109,15 @@
   margin: 0 auto;
   padding: 0;
   list-style: none;
+}
+
+.projectItem {
+  position: relative;
+  z-index: 1;
+}
+
+.activeItem {
+  z-index: 3;
 }
 
 .projectLink {
