@@ -31,7 +31,7 @@
   padding: clamp(250px, 19vw, 360px) clamp(34px, 7vw, 118px) 0;
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 8% 8% 8% 8% / 4% 4% 4% 4%;
+  border-radius: clamp(52px, 7vw, 112px);
   background: var(--about-surface);
   -webkit-mask-image: radial-gradient(
     ellipse 60% clamp(150px, 13vw, 230px) at 50% 0,
@@ -222,7 +222,7 @@
   .panel {
     min-height: 1120px;
     padding: 170px 24px 0;
-    border-radius: 5% 5% 5% 5% / 2% 2% 2% 2%;
+    border-radius: 58px;
     -webkit-mask-image: radial-gradient(
       ellipse 66% 96px at 50% 0,
       transparent calc(100% - 1px),
