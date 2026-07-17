@@ -40,8 +40,21 @@
   overflow: hidden;
   border-radius: 50%;
   background: var(--preview-surface, var(--surface-strong));
-  box-shadow: 24px 18px 72px color-mix(in srgb, var(--foreground) 14%, transparent);
+  filter: drop-shadow(20px 20px 46px color-mix(in srgb, var(--foreground) 16%, transparent));
+  clip-path: circle(0% at 50% 50%);
   translate: 0 -50%;
+  will-change: clip-path;
+  transition: clip-path 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.revealed {
+  clip-path: circle(50% at 50% 50%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .previewMask {
+    transition: none;
+  }
 }
 
 .previewMask::after {
@@ -55,7 +68,7 @@
 .previewRight {
   right: clamp(28px, 4vw, 72px);
   left: auto;
-  box-shadow: -24px 18px 72px color-mix(in srgb, var(--foreground) 14%, transparent);
+  filter: drop-shadow(-20px 20px 46px color-mix(in srgb, var(--foreground) 16%, transparent));
 }
 
 .previewRight::after {
