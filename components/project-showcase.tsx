@@ -4,7 +4,7 @@ import { ArrowRight } from "@phosphor-icons/react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "motion/react";
-import { useRef, useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { projects, type PortfolioProject } from "@/data/projects";
 import { ProjectName } from "./project-name";
 import styles from "./project-showcase.module.css";
@@ -12,6 +12,34 @@ import styles from "./project-showcase.module.css";
 export function ProjectShowcase() {
   const reduce = useReducedMotion();
   const [activeSlug, setActiveSlug] = useState<string | null>(null);
+
+  // Hover intent: when the pointer hops between adjacent titles it briefly
+  // crosses the gap. Deactivating immediately would start collapsing the
+  // preview circle and re-trigger the reveal delay, causing flicker. Instead,
+  // deactivation is debounced; entering another title cancels it and the
+  // circle stays open while the image swaps.
+  const leaveTimer = useRef<number | null>(null);
+  const activate = (slug: string) => {
+    if (leaveTimer.current !== null) {
+      window.clearTimeout(leaveTimer.current);
+      leaveTimer.current = null;
+    }
+    setActiveSlug(slug);
+  };
+  const scheduleDeactivate = () => {
+    if (leaveTimer.current !== null) window.clearTimeout(leaveTimer.current);
+    leaveTimer.current = window.setTimeout(() => {
+      leaveTimer.current = null;
+      setActiveSlug(null);
+    }, 200);
+  };
+  useEffect(
+    () => () => {
+      if (leaveTimer.current !== null) window.clearTimeout(leaveTimer.current);
+    },
+    [],
+  );
+
   const activeProject = projects.find((project) => project.slug === activeSlug);
   const activeIndex = projects.findIndex((project) => project.slug === activeSlug);
   const previewSide = activeIndex % 2 === 0 ? "left" : "right";
@@ -79,10 +107,10 @@ export function ProjectShowcase() {
                   activeSlug === project.slug ? styles.active : activeSlug ? styles.dimmed : ""
                 }`}
                 href={`/work/${project.slug}`}
-                onBlur={() => setActiveSlug(null)}
-                onFocus={() => setActiveSlug(project.slug)}
-                onMouseEnter={() => setActiveSlug(project.slug)}
-                onMouseLeave={() => setActiveSlug(null)}
+                onBlur={scheduleDeactivate}
+                onFocus={() => activate(project.slug)}
+                onMouseEnter={() => activate(project.slug)}
+                onMouseLeave={scheduleDeactivate}
               >
                 <span className={styles.nameRow}>
                   <span className={`display-type ${styles.projectName}`}>
