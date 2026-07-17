@@ -69,8 +69,18 @@ export function ProjectShowcase() {
       return;
     }
     const current = displayedRef.current;
-    if (!current || !openRef.current || current.slug === active.slug) {
-      if (!current || current.slug !== active.slug) setDisplayed(active);
+    if (!current) {
+      // Fresh mount: paint the mask closed first, then open on a later tick
+      // so the clip-path has a starting state to transition from.
+      setDisplayed(active);
+      switchTimer.current = window.setTimeout(() => {
+        switchTimer.current = null;
+        if (activeRef.current) setOpen(true);
+      }, 50);
+      return;
+    }
+    if (!openRef.current || current.slug === active.slug) {
+      if (current.slug !== active.slug) setDisplayed(active);
       setOpen(true);
       return;
     }
