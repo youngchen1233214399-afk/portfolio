@@ -32,7 +32,7 @@ export function WhatIDo() {
     offset: ["start end", "end start"],
   });
 
-  const ringRotate = useTransform(scrollYProgress, [0, 1], [-3, 4]);
+  const ringRotate = useTransform(scrollYProgress, [0, 1], [-1.5, 2]);
   const discScale = useTransform(scrollYProgress, [0, 0.52, 1], [0.93, 1, 1.035]);
   const clusterY = useTransform(scrollYProgress, [0, 1], [45, -20]);
   const clusterRotate = useTransform(scrollYProgress, [0, 1], [-2, 2]);
@@ -50,11 +50,13 @@ export function WhatIDo() {
             aria-hidden="true"
             className={styles.ring}
             style={reduce ? undefined : { rotate: ringRotate }}
-            viewBox="0 0 1200 1200"
+            viewBox="0 0 1300 1000"
           >
             <defs>
+              {/* Elliptical arc concentric with the dome (1.3:1), inset 70
+                  units, so the text runs parallel to the card edge. */}
               <path
-                d="M 40,630 A 560,560 0 0,1 1160,630"
+                d="M 71,530 A 580,430 0 0,1 1229,530"
                 id="what-i-do-ring"
               />
             </defs>
@@ -63,7 +65,7 @@ export function WhatIDo() {
                 href="#what-i-do-ring"
                 lengthAdjust="spacingAndGlyphs"
                 startOffset="0%"
-                textLength="1680"
+                textLength="1580"
               >
                 What I Do. See how I make AI clear, useful and testable.
               </textPath>
