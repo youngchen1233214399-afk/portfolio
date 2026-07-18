@@ -156,31 +156,31 @@ export const projects: PortfolioProject[] = [
     previewAlt: "Bristopia garden quest map",
     previewSurface: "#dcebe1",
     summary:
-      "A gamified mobile experience for the University of Bristol Botanic Garden that uses map exploration, QR tasks, community activities and rewards to encourage sustainable learning and everyday action.",
+      "Bristopia is a team-designed mobile concept for the University of Bristol Botanic Garden. It combines map exploration, QR challenges, rewards and community activities to help students discover sustainability projects and take part beyond a single visit.",
     slides: [
       {
         chapter: "Project Overview",
-        title: "A gamified Botanic Garden experience",
+        title: "A gamified sustainability experience for Bristol students",
         description:
-          "Bristopia is a gamified mobile experience designed for the University of Bristol Botanic Garden. Through map exploration, QR-code tasks, community activities and point-based rewards, it encourages students to learn about the garden's sustainability projects and build environmentally responsible everyday habits.",
+          "A seven-person team responded to a University of Bristol brief to strengthen long-term engagement with the Botanic Garden and wider green spaces. Bristopia combines garden exploration, QR challenges, rewards and community activities to help students discover sustainability projects and take part beyond a single visit.",
         image: "/projects/bristopia-thumbnail.webp",
         alt: "Bristopia map showing an active Pollinator Trail through the Botanic Garden",
         surface: "#dcebe1",
       },
       {
-        chapter: "Role",
-        title: "Research, behavioural analysis and design collaboration",
+        chapter: "Process",
+        title: "Pivoting from digital signage to a gamified app",
         description:
-          "I contributed to user research, behavioural analysis and design collaboration, translating student needs into feature and interaction directions. I also supported the mobile prototype and the production of its visual content.",
+          "I supported user research, behavioural analysis and the low-fidelity Figma prototype. HMW framing, stakeholder mapping, personas and site visits exposed the weak connection between existing signage, audio guides and sustainability. The team pivoted from digital signage to a gamified app and removed an AI plant-scanning idea after ethical and environmental concerns emerged.",
         image: "/projects/bristopia-role-map-collage-v2.webp",
         alt: "Bristopia mobile screens showing the garden map, quest selection and QR task flow",
         surface: "#e3eee7",
       },
       {
         chapter: "Outcome",
-        title: "Clear priorities for the next iteration",
+        title: "Testing revealed where the experience needed work",
         description:
-          "I completed a low-fidelity Figma prototype and a Codex-assisted high-fidelity prototype. User testing identified issues with QR-code guidance, map usability and navigation, establishing clear optimisation priorities for the next iteration.",
+          "Our team produced a low-fidelity Figma prototype and a high-fidelity Loveable prototype. Userbrain testing with two participants supported the appeal of rewards, challenges and community features, while revealing unclear QR onboarding, map and navigation problems, and a weak link between plant scanning and broader sustainability action. The project remains an exploratory prototype; an interactive map and a second testing cycle are needed.",
         image: "/projects/bristopia-outcome-collage-v2.webp",
         alt: "Bristopia community, profile and challenge screens shown across mobile mockups",
         surface: "#e0ede4",
