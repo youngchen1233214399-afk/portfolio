@@ -53,7 +53,7 @@
 
 .capabilities {
   position: absolute;
-  inset: 19% 22% 6%;
+  inset: 17% 16% 5%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -72,7 +72,7 @@
   font-family: var(--font-editorial);
   overflow: hidden;
   padding: 7%;
-  font-size: clamp(1.35rem, 2vw, 2.55rem);
+  font-size: clamp(1.6rem, 2.6vw, 3.2rem);
   line-height: 0.96;
   text-align: center;
   transform-origin: center;
@@ -93,41 +93,41 @@
 }
 
 .capabilityCore {
-  top: 15.5%;
-  left: 39%;
-  width: 24%;
+  top: 6%;
+  left: 36.5%;
+  width: 27%;
   background: var(--accent);
   color: var(--accent-contrast);
-  font-size: clamp(1.1rem, 1.55vw, 1.9rem);
+  font-size: clamp(1.3rem, 2vw, 2.4rem);
 }
 
 .capabilityUx {
-  top: 23%;
+  top: 23.5%;
   right: 13.5%;
-  width: 24%;
+  width: 27%;
 }
 
 .capabilityInteraction {
-  top: 32.5%;
-  left: 22%;
-  width: 24%;
+  top: 26.5%;
+  left: 14%;
+  width: 27%;
 }
 
 .capabilityInteraction,
 .capabilityProduct {
-  font-size: clamp(1.2rem, 1.75vw, 2.15rem);
+  font-size: clamp(1.4rem, 2.25vw, 2.7rem);
 }
 
 .capabilityCode {
-  top: 46%;
-  right: 20%;
-  width: 24%;
+  top: 54%;
+  right: 21.5%;
+  width: 27%;
 }
 
 .capabilityProduct {
-  top: 63%;
-  left: 39%;
-  width: 24%;
+  top: 69%;
+  left: 26%;
+  width: 27%;
 }
 
 @media (max-width: 900px) {
