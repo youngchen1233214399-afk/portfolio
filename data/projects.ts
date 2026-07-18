@@ -115,31 +115,40 @@ export const projects: PortfolioProject[] = [
     previewAlt: "741 community, leaderboard, shop and performance screens shown in a flat-lay composition",
     previewSurface: "#e6e8e5",
     summary:
-      "741 Performance is a post-purchase membership platform for 741 footwear customers, using shoebox QR activation to connect points, challenges, leaderboards, community content, limited drops and member benefits.",
+      "741 Performance began as a team concept for strengthening the relationship between amateur athletes and the 741 brand. After the course project, I rebuilt the QR-activated membership website with shop, community, leaderboard and athlete-profile experiences.",
     slides: [
       {
-        chapter: "Project Overview",
-        title: "Turning the shoebox into a membership entry point",
+        chapter: "Context",
+        title: "Extending the shoebox into a membership journey",
         description:
-          "741 Performance is a post-purchase membership platform for 741 footwear customers. A QR code inside the shoebox activates the experience and connects points-based challenges, leaderboards, user-generated content, limited drops and exclusive member benefits in one journey.",
+          "The project began with a client brief to improve the relationship between amateur athletes and the 741 brand. During the seven-person team phase, I contributed to research synthesis, concept development and prototype execution. After the module, I rebuilt the website as an expanded responsive membership prototype.",
         image: "/projects/741-outcome-flatlay.webp",
         alt: "741 community, leaderboard, shop and performance screens shown in a flat-lay composition",
         surface: "#e6e8e5",
       },
       {
-        chapter: "Role",
-        title: "Designing the journey and growth loop",
+        chapter: "Research & Pivot",
+        title: "Reframing performance as identity and belonging",
         description:
-          "I led competitor analysis, mapped the user journey and designed the engagement loop. I planned the digital membership system, built the interactive prototype and organised user testing to evaluate the concept and refine the experience.",
-        image: "/projects/741-role-collage.webp",
-        alt: "741 hero, shop and community forum shown across an isometric device layout",
-        surface: "#e6e8e5",
+          "Personas and stakeholder mapping initially pointed toward club administration and accessibility. A client meeting with Peter Palmer changed the brief: performance needed to feel like identity and story. The team revised its affinity themes, How Might We questions and competitor analysis around authenticity, scarcity and personalisation.",
+        image: "/projects/741-process-decision-map.webp",
+        alt: "741 visual decision map showing the project pivot from early personas to a performance and identity-led concept",
+        surface: "#f1f1ed",
+      },
+      {
+        chapter: "Design Decisions",
+        title: "Choosing a QR website over a standalone app",
+        description:
+          "Two concepts were explored. We selected the shoebox and QR-access website because it was feasible, stayed inside the familiar 741 environment and received positive client feedback. The concept combined exclusive drops, detachable pods, community content, points and performance tracking into one membership loop.",
+        image: "/projects/741-design-concepts.webp",
+        alt: "Comparison of two 741 concepts, including a shoebox QR website and a standalone fitness community app",
+        surface: "#f0f0ec",
       },
       {
         chapter: "Outcome",
-        title: "Validating what drives participation",
+        title: "Rebuilding the concept into a broader prototype",
         description:
-          "I delivered a high-fidelity interactive prototype and tested it with users. Early findings suggested that points and leaderboards could motivate participation, while also revealing issues with entry-point visibility and understanding of key features.",
+          "After the team project, I rebuilt the website with Shop, Community, Leaderboard and Profile modules across desktop and mobile. The original Userbrain study with two participants suggested that rewards and progress could motivate return visits, while team discovery, entry expectations and feature clarity required further iteration. The work remains a prototype-stage exploration, not a launched product.",
         image: "/projects/741-thumbnail.webp",
         alt: "741 brand experience shown across laptop, tablet and phone screens",
         surface: "#e8eae7",
