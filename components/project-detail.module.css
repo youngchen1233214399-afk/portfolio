@@ -125,7 +125,7 @@
 
 .copy h1.compactProjectTitle {
   max-width: none;
-  font-size: clamp(4rem, 6.4vw, 7.6rem);
+  font-size: clamp(3.8rem, 5.8vw, 6.8rem);
   line-height: 0.82;
   white-space: nowrap;
 }
@@ -341,7 +341,7 @@
   }
 
   .copy h1.compactProjectTitle {
-    font-size: clamp(3.5rem, 5.4vw, 5.5rem);
+    font-size: clamp(3.4rem, 5vw, 5.2rem);
   }
 
   .slideTitle,
