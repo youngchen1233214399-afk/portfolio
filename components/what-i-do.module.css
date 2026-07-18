@@ -72,7 +72,7 @@
   font-family: var(--font-editorial);
   overflow: hidden;
   padding: 7%;
-  font-size: clamp(1.6rem, 2.6vw, 3.2rem);
+  font-size: clamp(1.4rem, 2.2vw, 2.6rem);
   line-height: 0.96;
   text-align: center;
   transform-origin: center;
@@ -98,7 +98,6 @@
   width: 27%;
   background: var(--accent);
   color: var(--accent-contrast);
-  font-size: clamp(1.3rem, 2vw, 2.4rem);
 }
 
 .capabilityUx {
@@ -111,11 +110,6 @@
   top: 26.5%;
   left: 14%;
   width: 27%;
-}
-
-.capabilityInteraction,
-.capabilityProduct {
-  font-size: clamp(1.4rem, 2.25vw, 2.7rem);
 }
 
 .capabilityCode {
@@ -185,7 +179,7 @@
   }
 
   .capability {
-    font-size: clamp(1.2rem, 6vw, 1.65rem);
+    font-size: clamp(1rem, 4.6vw, 1.3rem);
   }
 
   .capabilityCore {
@@ -204,15 +198,6 @@
     top: 24%;
     left: 3%;
     width: 33%;
-  }
-
-  .capabilityInteraction,
-  .capabilityProduct {
-    font-size: clamp(1rem, 5vw, 1.4rem);
-  }
-
-  .capabilityCore {
-    font-size: clamp(1rem, 4.4vw, 1.25rem);
   }
 
   .capabilityCode {
