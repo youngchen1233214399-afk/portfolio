@@ -119,7 +119,7 @@ export const projects: PortfolioProject[] = [
     slides: [
       {
         chapter: "Project Overview",
-        title: "Turning the shoebox into a membership entry point",
+        title: "A post-purchase membership experience for 741 athletes",
         description:
           "The seven-person team responded to a client brief about strengthening the relationship between amateur athletes and the 741 brand. We designed a QR-activated membership website that brings products, community participation, rewards and performance information into one connected experience.",
         image: "/projects/741-outcome-flatlay.webp",
@@ -128,7 +128,7 @@ export const projects: PortfolioProject[] = [
       },
       {
         chapter: "Process",
-        title: "Refining the brief through research and feedback",
+        title: "Turning the shoebox into a membership entry point",
         description:
           "Early personas and stakeholder mapping focused on club administration and accessibility. Client feedback shifted the direction toward performance as identity and story, so we reframed the opportunity around authenticity, scarcity and personalisation. After comparing a standalone app with a shoebox QR website, we selected the website for its feasibility and direct connection to the existing 741 experience.",
         image: "/projects/741-role-collage.webp",
