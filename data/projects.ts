@@ -171,7 +171,7 @@ export const projects: PortfolioProject[] = [
         chapter: "Process",
         title: "Pivoting from digital signage to a gamified app",
         description:
-          "I supported user research, behavioural analysis and the low-fidelity Figma prototype. HMW framing, stakeholder mapping, personas and site visits exposed the weak connection between existing signage, audio guides and sustainability. The team pivoted from digital signage to a gamified app and removed an AI plant-scanning idea after ethical and environmental concerns emerged.",
+          "I supported user research and behavioural analysis, then designed and built both the low-fidelity Figma prototype and the high-fidelity interactive prototype. HMW framing, stakeholder mapping, personas and site visits exposed the weak connection between existing signage, audio guides and sustainability. The team pivoted from digital signage to a gamified app and removed an AI plant-scanning idea after ethical and environmental concerns emerged.",
         image: "/projects/bristopia-role-map-collage-v2.webp",
         alt: "Bristopia mobile screens showing the garden map, quest selection and QR task flow",
         surface: "#e3eee7",
@@ -180,7 +180,7 @@ export const projects: PortfolioProject[] = [
         chapter: "Outcome",
         title: "Testing revealed where the experience needed work",
         description:
-          "Our team produced a low-fidelity Figma prototype and a high-fidelity Loveable prototype. Userbrain testing with two participants supported the appeal of rewards, challenges and community features, while revealing unclear QR onboarding, map and navigation problems, and a weak link between plant scanning and broader sustainability action. The project remains an exploratory prototype; an interactive map and a second testing cycle are needed.",
+          "I designed and built both the low-fidelity Figma prototype and the high-fidelity interactive prototype. Userbrain testing with two participants supported the appeal of rewards, challenges and community features, while revealing unclear QR onboarding, map and navigation problems, and a weak link between plant scanning and broader sustainability action. The project remains an exploratory prototype; an interactive map and a second testing cycle are needed.",
         image: "/projects/bristopia-outcome-collage-v2.webp",
         alt: "Bristopia community, profile and challenge screens shown across mobile mockups",
         surface: "#e0ede4",
