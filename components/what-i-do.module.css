@@ -93,8 +93,8 @@
 }
 
 .capabilityCore {
-  top: 12%;
-  left: 38%;
+  top: 15.5%;
+  left: 39%;
   width: 24%;
   background: var(--accent);
   color: var(--accent-contrast);
@@ -102,14 +102,14 @@
 }
 
 .capabilityUx {
-  top: 20%;
-  right: 12%;
+  top: 23%;
+  right: 13.5%;
   width: 24%;
 }
 
 .capabilityInteraction {
-  top: 32%;
-  left: 18%;
+  top: 32.5%;
+  left: 22%;
   width: 24%;
 }
 
@@ -119,14 +119,14 @@
 }
 
 .capabilityCode {
-  top: 47%;
-  right: 18%;
+  top: 46%;
+  right: 20%;
   width: 24%;
 }
 
 .capabilityProduct {
-  top: 67%;
-  left: 38%;
+  top: 63%;
+  left: 39%;
   width: 24%;
 }
 
