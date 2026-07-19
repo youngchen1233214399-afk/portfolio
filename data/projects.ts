@@ -156,31 +156,31 @@ export const projects: PortfolioProject[] = [
     previewAlt: "Bristopia garden quest map",
     previewSurface: "#dcebe1",
     summary:
-      "Bristopia is a team-designed mobile concept for the University of Bristol Botanic Garden. It combines map exploration, QR challenges, rewards and community activities to help students discover sustainability projects and take part beyond a single visit.",
+      "I worked with a team to design a gamified mobile experience for the University of Bristol Botanic Garden, helping students discover its sustainability work through garden exploration, QR-based challenges, rewards, and community activities.",
     slides: [
       {
         chapter: "Project Overview",
-        title: "A gamified sustainability experience for Bristol students",
+        title: "A gamified mobile experience for the Botanic Garden",
         description:
-          "A seven-person team responded to a University of Bristol brief to strengthen long-term engagement with the Botanic Garden and wider green spaces. Bristopia combines garden exploration, QR challenges, rewards and community activities to help students discover sustainability projects and take part beyond a single visit.",
+          "I worked with a team to design a gamified mobile experience for the University of Bristol Botanic Garden, helping students discover its sustainability work through garden exploration, QR-based challenges, rewards, and community activities.",
         image: "/projects/bristopia-thumbnail.webp",
         alt: "Bristopia map showing an active Pollinator Trail through the Botanic Garden",
         surface: "#dcebe1",
       },
       {
-        chapter: "Process",
-        title: "Pivoting from digital signage to a gamified app",
+        chapter: "Strategy",
+        title: "Designing for active garden exploration",
         description:
-          "I supported user research and behavioural analysis, then designed and built both the low-fidelity Figma prototype and the high-fidelity interactive prototype. HMW framing, stakeholder mapping, personas and site visits exposed the weak connection between existing signage, audio guides and sustainability. The team pivoted from digital signage to a gamified app and removed an AI plant-scanning idea after ethical and environmental concerns emerged.",
+          "We combined stakeholder analysis, competitor research, personas, STEEPLE, and on-site AEIOU observation to understand students’ motivations and barriers. Based on these insights, we shifted from digital signage and AI plant recognition toward a lightweight gamified experience centred on exploration, sustainability challenges, rewards, and community participation.",
         image: "/projects/bristopia-role-map-collage-v2.webp",
         alt: "Bristopia mobile screens showing the garden map, quest selection and QR task flow",
         surface: "#e3eee7",
       },
       {
-        chapter: "Outcome",
-        title: "Testing revealed where the experience needed work",
+        chapter: "Results",
+        title: "Testing the gamified garden experience",
         description:
-          "I designed and built both the low-fidelity Figma prototype and the high-fidelity interactive prototype. Userbrain testing with two participants supported the appeal of rewards, challenges and community features, while revealing unclear QR onboarding, map and navigation problems, and a weak link between plant scanning and broader sustainability action. The project remains an exploratory prototype; an interactive map and a second testing cycle are needed.",
+          "We delivered a low-fidelity Figma prototype and a higher-fidelity interactive prototype in Claude. Mobile usability testing validated the appeal of challenges, rewards, achievements, and community activities, while identifying QR onboarding, map usability, navigation, and sustainability messaging as the main priorities for further iteration.",
         image: "/projects/bristopia-outcome-collage-v2.webp",
         alt: "Bristopia community, profile and challenge screens shown across mobile mockups",
         surface: "#e0ede4",
