@@ -32,31 +32,31 @@ export const projects: PortfolioProject[] = [
     previewAlt: "Eco-Bridge dashboard and ESG decoder shown across a laptop and layered screens",
     previewSurface: "#17251b",
     summary:
-      "Based on a client brief from Heaven Company, Eco-Bridge explores how AI-assisted interpretation can make ESG information easier to understand and connect corporate information with community needs.",
+      "It was my pleasure to work with the Heaven Company team. Through user research and iterative design, we explored how AI could transform complex ESG content into understandable, contextualised and user-centred experiences.",
     slides: [
       {
         chapter: "Project Overview",
-        title: "Connecting ESG information with community needs",
+        title: "Making ESG information accessible",
         description:
-          "Based on a client brief from Heaven Company, Eco-Bridge explores how AI-assisted information interpretation can lower the barrier to understanding ESG content and connect corporate information with community needs through an AI information experience prototype.",
+          "It was my pleasure to work with the Heaven Company team. Through user research and iterative design, we explored how AI could transform complex ESG content into understandable, contextualised and user-centred experiences.",
         image: "/projects/eco-bridge-thumbnail.webp",
         alt: "Eco-Bridge dashboard and ESG decoder shown across a laptop and layered screens",
         surface: "#edf1ea",
       },
       {
-        chapter: "Role",
-        title: "UX research, interaction design and AI prototyping",
+        chapter: "Strategy",
+        title: "Building ESG trust",
         description:
-          "I was responsible for UX research, interaction design and AI prototyping for Eco-Bridge, contributing across the complete design process from user insights and experience-flow design to high-fidelity prototype validation.",
+          "Through community research, expert interviews and stakeholder analysis, we identified that climate communication challenges were not only caused by information complexity, but also by gaps in trust and everyday relevance. We reframed the challenge into designing a more accessible and context-aware information experience, exploring an AI-assisted ESG interpretation workflow that connects sustainability information with community needs.",
         image: "/projects/eco-role-system-collage.webp",
         alt: "Eco-Bridge business and community interface system shown across a layered screen composition",
         surface: "#e8eee2",
       },
       {
-        chapter: "Outcome",
-        title: "A tested prototype direction",
+        chapter: "Results",
+        title: "Validating an AI-assisted ESG workflow",
         description:
-          "I completed the core interaction prototypes for resource browsing, AI explanations and company information. User testing validated the experience direction: the community-facing prototype achieved a 4.5/5 usability score, and 100% of participants found it useful. The project remains at the prototype validation stage.",
+          "We developed an interactive prototype covering resource discovery, AI-assisted ESG interpretation and community feedback flows. Using Claude and Codex for rapid prototyping, we validated core interactions through usability testing, achieving 4.5/5 usability and 100% perceived usefulness feedback from community-side testing, while enterprise feedback helped refine the product direction.",
         image: "/projects/eco-outcome-decoder-display.webp",
         alt: "Eco-Bridge ESG Report Decoder shown on a desktop display",
         surface: "#e9ece7",
