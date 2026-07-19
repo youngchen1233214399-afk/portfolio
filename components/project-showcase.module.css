@@ -5,19 +5,6 @@
   overflow: clip;
 }
 
-.section::before {
-  position: absolute;
-  top: 50%;
-  left: clamp(24px, 5vw, 90px);
-  width: clamp(74px, 8vw, 124px);
-  aspect-ratio: 1;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: color-mix(in srgb, var(--accent) 18%, var(--surface));
-  content: "";
-  transform: translateY(-50%);
-}
-
 .inner {
   position: relative;
 }
@@ -192,28 +179,10 @@
   text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .section::before {
-    animation: ornament-float 7s ease-in-out infinite alternate;
-  }
-}
-
-@keyframes ornament-float {
-  to {
-    transform: translateY(calc(-50% - 34px));
-  }
-}
-
 @media (max-width: 767px) {
   .section {
     min-height: auto;
     padding-block: 90px 120px;
-  }
-
-  .section::before {
-    top: 46%;
-    left: -28px;
-    width: 86px;
   }
 
   .previewLayer {
