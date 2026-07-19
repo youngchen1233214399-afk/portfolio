@@ -65,12 +65,12 @@ export const projects: PortfolioProject[] = [
   },
   {
     slug: "claritybrief",
-    name: "GCS Assist",
+    name: "ClarityBrief",
     type: "AI-assisted Review Workflow / UX & Interaction Design",
     year: "2025",
     liveUrl: "https://gcs-ai.netlify.app/",
     previewImage: "/projects/claritybrief-thumbnail.webp",
-    previewAlt: "GCS Assist review workspace shown across layered desktop screens",
+    previewAlt: "ClarityBrief review workspace shown across layered desktop screens",
     previewSurface: "#d7e7f2",
     summary:
       "It was my pleasure to work with the GCS team to explore how AI can support high-risk policy communication workflows by designing a human-AI collaboration experience for government document review, focusing on transparency, efficiency and human decision-making.",
@@ -81,7 +81,7 @@ export const projects: PortfolioProject[] = [
         description:
           "It was my pleasure to work with the GCS team to explore how AI can support high-risk policy communication workflows by designing a human-AI collaboration experience for government document review, focusing on transparency, efficiency and human decision-making.",
         image: "/projects/claritybrief-thumbnail.webp",
-        alt: "GCS Assist review workspace shown across layered desktop screens",
+        alt: "ClarityBrief review workspace shown across layered desktop screens",
         surface: "#eef2f6",
       },
       {
@@ -90,7 +90,7 @@ export const projects: PortfolioProject[] = [
         description:
           "Through user research and workflow analysis, we identified that the key challenge in government communication was not content generation, but the complexity of reviewing, verifying and approving policy documents. We designed an AI-assisted review workflow that transforms complex documents into structured insights while keeping human reviewers in control.",
         image: "/projects/clarity-role-system-collage.webp",
-        alt: "GCS Assist AI review system shown across multiple layered interface screens",
+        alt: "ClarityBrief AI review system shown across multiple layered interface screens",
         surface: "#e7eef5",
       },
       {
@@ -99,7 +99,7 @@ export const projects: PortfolioProject[] = [
         description:
           "I designed and developed a high-fidelity prototype covering document analysis, risk indication and approval workflows. I conducted early usability testing with 77% task completion, refining AI transparency, information hierarchy and user control.",
         image: "/projects/clarity-outcome-router-display.webp",
-        alt: "GCS Assist AI Review Router shown on a desktop display with layered workflow screens",
+        alt: "ClarityBrief AI Review Router shown on a desktop display with layered workflow screens",
         surface: "#dfe9f3",
       },
     ],
