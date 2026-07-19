@@ -53,10 +53,10 @@ export function WhatIDo() {
             viewBox="0 0 1300 1000"
           >
             <defs>
-              {/* Elliptical arc concentric with the dome (1.3:1), inset 70
+              {/* Elliptical arc concentric with the dome (1.3:1), inset 135
                   units, so the text runs parallel to the card edge. */}
               <path
-                d="M 70,500 A 580,430 0 0,1 1230,500"
+                d="M 135,500 A 515,365 0 0,1 1165,500"
                 id="what-i-do-ring"
               />
             </defs>
@@ -65,7 +65,7 @@ export function WhatIDo() {
                 href="#what-i-do-ring"
                 lengthAdjust="spacingAndGlyphs"
                 startOffset="0%"
-                textLength="1425"
+                textLength="1340"
               >
                 What I Do. See how I make AI clear, useful and testable.
               </textPath>

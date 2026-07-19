@@ -46,7 +46,7 @@
 .ring text {
   fill: var(--accent);
   font-family: var(--font-editorial);
-  font-size: 66px;
+  font-size: 62px;
   font-weight: 450;
   letter-spacing: -0.035em;
 }
@@ -134,7 +134,7 @@
   }
 
   .ring text {
-    font-size: 61px;
+    font-size: 57px;
   }
 }
 
@@ -170,7 +170,7 @@
   }
 
   .ring text {
-    font-size: 58px;
+    font-size: 55px;
   }
 
   .capabilities {
