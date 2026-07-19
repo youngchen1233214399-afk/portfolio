@@ -115,31 +115,31 @@ export const projects: PortfolioProject[] = [
     previewAlt: "741 community, leaderboard, shop and performance screens shown in a flat-lay composition",
     previewSurface: "#e6e8e5",
     summary:
-      "741 Performance is a team-designed post-purchase membership website for amateur athletes and 741 footwear customers. A shoebox QR code connects exclusive products, community content, points, leaderboards and performance profiles.",
+      "It was my pleasure to work with the 741 Performance team to design a post-purchase digital membership experience. By turning the shoebox QR code into a member entry point, the concept connects product purchase with community participation, exclusive benefits and personalised repurchase.",
     slides: [
       {
         chapter: "Project Overview",
-        title: "A post-purchase membership experience for 741 athletes",
+        title: "A post-purchase digital membership experience",
         description:
-          "The seven-person team responded to a client brief about strengthening the relationship between amateur athletes and the 741 brand. We designed a QR-activated membership website that brings products, community participation, rewards and performance information into one connected experience.",
+          "It was my pleasure to work with the 741 Performance team to design a post-purchase digital membership experience. By turning the shoebox QR code into a member entry point, the concept connects product purchase with community participation, exclusive benefits and personalised repurchase.",
         image: "/projects/741-outcome-flatlay.webp",
         alt: "741 community, leaderboard, shop and performance screens shown in a flat-lay composition",
         surface: "#e6e8e5",
       },
       {
-        chapter: "Process",
-        title: "Turning the shoebox into a membership entry point",
+        chapter: "Strategy",
+        title: "From club management to post-purchase engagement",
         description:
-          "Early personas and stakeholder mapping focused on club administration and accessibility. Client feedback shifted the direction toward performance as identity and story, so we reframed the opportunity around authenticity, scarcity and personalisation. After comparing a standalone app with a shoebox QR website, we selected the website for its feasibility and direct connection to the existing 741 experience.",
+          "We combined persona analysis, stakeholder mapping, affinity mapping and brand interviews to shift the project from club management to post-purchase engagement. I then defined the QR membership journey, core features and information architecture, and used Claude to build and test a high-fidelity prototype.",
         image: "/projects/741-role-collage.webp",
         alt: "741 hero, shop and community forum shown across an isometric device layout",
         surface: "#e6e8e5",
       },
       {
         chapter: "Outcome",
-        title: "Testing the membership experience",
+        title: "An end-to-end membership journey",
         description:
-          "The final website connects Shop, Community, Leaderboard and Profile experiences across desktop and mobile. A small Userbrain study with two participants suggested that rewards and progress could encourage return visits, while team discovery, entry expectations and feature clarity needed further iteration. The result is a high-fidelity prototype rather than a launched product.",
+          "The project delivered an end-to-end journey from QR activation to points, leaderboards, community participation and personalised repurchase. Userbrain testing validated the motivational value of gamification and identified issues around navigation, mobile expectations and detachable pods.",
         image: "/projects/741-thumbnail.webp",
         alt: "741 brand experience shown across laptop, tablet and phone screens",
         surface: "#e8eae7",
