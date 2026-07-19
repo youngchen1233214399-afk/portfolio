@@ -66,7 +66,7 @@ export const projects: PortfolioProject[] = [
   {
     slug: "claritybrief",
     name: "ClarityBrief",
-    type: "AI-assisted Review Workflow / UX & Interaction Design",
+    type: "Explainable AI review",
     year: "2025",
     liveUrl: "https://gcs-ai.netlify.app/",
     previewImage: "/projects/claritybrief-thumbnail.webp",
