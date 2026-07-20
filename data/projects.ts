@@ -75,13 +75,13 @@ export const projects: PortfolioProject[] = [
     previewAlt: "Wonderland opening screen with Alice falling through a dark dreamscape",
     previewSurface: "#081411",
     summary:
-      "I designed and built Wonderland, a browser-based Alice in Wonderland game where the player's movement is interpreted as attention and continuously reshapes the dream. Focus, curiosity and drifting become different paths through the experience rather than measures of success or failure.",
+      "I was proud to be a part of the Bristol Game Lab, exploring how AI can transform player behaviour into narrative.",
     slides: [
       {
         chapter: "Project Overview",
         title: "A dream shaped by attention",
         description:
-          "I designed and built Wonderland, a browser game where movement reshapes an Alice in Wonderland dream. Focus, curiosity and drifting become different paths rather than measures of success or failure.",
+          "I was proud to be a part of the Bristol Game Lab, exploring how AI can transform player behaviour into narrative.",
         image: "/projects/wonderland-overview.webp",
         alt: "Wonderland opening screen with Alice falling through a dark dreamscape",
         surface: "#081411",
@@ -90,7 +90,7 @@ export const projects: PortfolioProject[] = [
         chapter: "Strategy",
         title: "Movement as narrative input",
         description:
-          "I moved beyond AI chat by treating WASD movement as behavioural input. Click-and-cube experiments led to three attention states: Focus converges paths, Curious reveals hidden elements and Adrift rewrites the world. I mapped each state to maze structure, sound, NPC responses and visible feedback.",
+          "I designed a behavioural-driven gameplay system where player actions become the foundation of narrative. By analysing exploration patterns, movement choices and re-entry behaviours, the system transforms wandering, repetition and recovery into meaningful interactions, creating an adaptive environment where the world responds to the player's unique way of navigating space.",
         image: "/projects/wonderland-strategy.webp",
         alt: "Wonderland gameplay showing the green Curious attention state and hidden dream objects",
         surface: "#10241b",
@@ -99,7 +99,7 @@ export const projects: PortfolioProject[] = [
         chapter: "Results",
         title: "A self-rewriting dream",
         description:
-          "The result is a playable browser prototype with non-linear exploration, changing chapters, NPC encounters and multiple endings shaped by movement. An optional Claude layer turns the play trace into Cheshire Cat responses and dream motifs, while the core game works without an API key.",
+          "Developed an AI-driven interactive prototype integrating behavioural analysis, AI reflection and adaptive world changes. The project demonstrates how AI can function as an environmental storytelling engine, enabling games to generate personalised experiences through the relationship between player behaviour and responsive systems.",
         image: "/projects/wonderland-results.webp",
         alt: "Wonderland gameplay showing the purple Adrift state and a responsive Cheshire Cat message",
         surface: "#25162d",
