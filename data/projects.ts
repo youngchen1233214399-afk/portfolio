@@ -79,7 +79,7 @@ export const projects: PortfolioProject[] = [
     slides: [
       {
         chapter: "Project Overview",
-        title: "A dream shaped by attention",
+        title: "Behaviour becomes the story",
         description:
           "I was proud to be a part of the Bristol Game Lab, exploring how AI can transform player behaviour into narrative.",
         image: "/projects/wonderland-overview.webp",
