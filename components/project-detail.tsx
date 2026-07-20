@@ -148,7 +148,7 @@ export function ProjectDetail({ project, nextProject }: ProjectDetailProps) {
 
           <div className={styles.actions}>
             <a className={styles.liveLink} href={project.liveUrl} target="_blank" rel="noreferrer">
-              Open live product
+              {project.liveLabel ?? "Open live product"}
               <ArrowUpRight aria-hidden="true" size={22} />
             </a>
             <Link className={styles.nextLink} href={`/work/${nextProject.slug}`}>

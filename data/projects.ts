@@ -14,6 +14,7 @@ export type PortfolioProject = {
   type: string;
   year: string;
   liveUrl: string;
+  liveLabel?: string;
   previewImage: string;
   previewAlt: string;
   previewSurface: string;
@@ -60,6 +61,48 @@ export const projects: PortfolioProject[] = [
         image: "/projects/eco-outcome-decoder-display.webp",
         alt: "Eco-Bridge ESG Report Decoder shown on a desktop display",
         surface: "#e9ece7",
+      },
+    ],
+  },
+  {
+    slug: "wandering-wonderland",
+    name: "Wandering Wonderland",
+    type: "Adaptive AI narrative",
+    year: "2026",
+    liveUrl: "https://github.com/youngchen1233214399-afk/ai-game",
+    liveLabel: "View GitHub project",
+    previewImage: "/projects/wonderland-overview.webp",
+    previewAlt: "Wandering Wonderland opening screen with Alice falling through a dark dreamscape",
+    previewSurface: "#081411",
+    summary:
+      "I designed and built Wandering Wonderland, a browser-based Alice in Wonderland game where the player's movement is interpreted as attention and continuously reshapes the dream. Focus, curiosity and drifting become different paths through the experience rather than measures of success or failure.",
+    slides: [
+      {
+        chapter: "Project Overview",
+        title: "A dream shaped by attention",
+        description:
+          "I designed and built Wandering Wonderland, a browser game where movement reshapes an Alice in Wonderland dream. Focus, curiosity and drifting become different paths rather than measures of success or failure.",
+        image: "/projects/wonderland-overview.webp",
+        alt: "Wandering Wonderland opening screen with Alice falling through a dark dreamscape",
+        surface: "#081411",
+      },
+      {
+        chapter: "Strategy",
+        title: "Movement as narrative input",
+        description:
+          "I moved beyond AI chat by treating WASD movement as behavioural input. Click-and-cube experiments led to three attention states: Focus converges paths, Curious reveals hidden elements and Adrift rewrites the world. I mapped each state to maze structure, sound, NPC responses and visible feedback.",
+        image: "/projects/wonderland-strategy.webp",
+        alt: "Wandering Wonderland gameplay showing the green Curious attention state and hidden dream objects",
+        surface: "#10241b",
+      },
+      {
+        chapter: "Results",
+        title: "A self-rewriting dream",
+        description:
+          "The result is a playable browser prototype with non-linear exploration, changing chapters, NPC encounters and multiple endings shaped by movement. An optional Claude layer turns the play trace into Cheshire Cat responses and dream motifs, while the core game works without an API key.",
+        image: "/projects/wonderland-results.webp",
+        alt: "Wandering Wonderland gameplay showing the purple Adrift state and a responsive Cheshire Cat message",
+        surface: "#25162d",
       },
     ],
   },
